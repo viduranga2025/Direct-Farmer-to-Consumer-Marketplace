@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriCart - Farmer Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1><i class="fa-solid fa-shuttle-space"></i> AgriCart</h1>
+            <p>Direct from Farm to Table</p>
+        </header>
+
+        <div class="main-content">
+            <section class="add-product">
+                <h3><i class="fa-solid fa-plus-circle"></i> List Your Harvest</h3>
+                <form id="productForm">
+                    <input type="text" id="pName" placeholder="Item Name (e.g. Red Rice)" required>
+                    <input type="number" id="pPrice" placeholder="Price per kg (Rs.)" required>
+                    <select id="pCategory">
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Grains">Grains</option>
+                    </select>
+                    <button type="submit">Post Product</button>
+                </form>
+            </section>
+
+            <section class="market">
+                <h3><i class="fa-solid fa-store"></i> Current Marketplace</h3>
+                <div id="productGrid" class="grid">
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
